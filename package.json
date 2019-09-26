@@ -1,0 +1,19 @@
+{
+  "name": "mao-site",
+  "version": "1.0.0",
+  "description": "my personal website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maciejmao/myCvPrt.git"
+  },
+  "author": "Maciej MaO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maciejmao/myCvPrt/issues"
+  },
+  "homepage": "https://github.com/maciejmao/myCvPrt#readme"
+}
