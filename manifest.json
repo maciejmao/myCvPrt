@@ -1,0 +1,13 @@
+{
+    "short_name": "MaO",
+    "name": "MaO > Web",
+    "icons": [
+      {
+        "src": "images/my/avt-192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      }
+    ],
+    "start_url": "/",
+    "display": "standalone"
+  }
