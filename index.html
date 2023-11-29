@@ -1,28 +1,27 @@
 <!DOCTYPE html>
-<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if lt IE 9]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9]><html class="no-js oldie ie9" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html class="no-js" lang="en">
-<!--<![endif]-->
+  <!--<![endif]-->
 
-<head>
-
+  <head>
     <!--- basic page needs
     ================================================== -->
-    <meta charset="utf-8">
-    <title>MaO > Front-End Developer, JavaScript and PHP programmer</title>
-    <meta name="description" content="this is private website about me and my profession">
-    <meta name="author" content="MaO">
+    <meta charset="utf-8" />
+    <title>MaO > Front-End Developer with React, JavaScript and PHP programmer</title>
+    <meta name="description" content="this is private website about me and my profession" />
+    <meta name="author" content="MaO" />
 
     <!-- mobile specific metas
     ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- CSS
     ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/main.css" />
 
     <!-- script
     ================================================== -->
@@ -31,1110 +30,1338 @@
 
     <!-- favicons
     ================================================== -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
     <!-- manifest
     ================================================== -->
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="manifest.json" />
+  </head>
 
-</head>
-
-<body id="top">
-
+  <body id="top">
     <!-- header
     ================================================== -->
     <header class="s-header">
+      <nav class="header-nav-wrap">
+        <ul class="header-nav">
+          <li class="current"><a class="smoothscroll" href="#home" title="home">Home</a></li>
+          <li><a class="smoothscroll" href="#about" title="my profile">About me</a></li>
+          <li>
+            <a class="smoothscroll" href="#experience" title="work experience">Work experience</a>
+          </li>
+          <li><a class="smoothscroll" href="#works" title="check out my works">Portfolio</a></li>
+          <li><a class="smoothscroll" href="#contact" title="contact">Contact</a></li>
+        </ul>
+      </nav>
 
-        <nav class="header-nav-wrap">
-            <ul class="header-nav">
-                <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
-                <li><a class="smoothscroll"  href="#about" title="my profile">About me</a></li>
-                <li><a class="smoothscroll"  href="#experience" title="work experience">Work experience</a></li>
-                <li><a class="smoothscroll"  href="#works" title="check out my works">Portfolio</a></li>
-                <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
-            </ul>
-        </nav>
+      <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+    </header>
+    <!-- end s-header -->
 
-        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
-
-    </header> <!-- end s-header -->
-
-
-   <!-- home
+    <!-- home
    ================================================== -->
-   <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="images/my/P1730618.jpg" data-natural-width=1920 data-natural-height=1084 data-position-y=center>
+    <section
+      id="home"
+      class="s-home page-hero target-section"
+      data-parallax="scroll"
+      data-image-src="images/my/P1730618.jpg"
+      data-natural-width="1920"
+      data-natural-height="1084"
+      data-position-y="center"
+    >
+      <div class="overlay"></div>
+      <div class="shadow-overlay"></div>
 
-        <div class="overlay"></div>
-        <div class="shadow-overlay"></div>
+      <div class="home-content">
+        <div class="row home-content__main">
+          <h3>Hello universe</h3>
 
-        <div class="home-content">
+          <h1>I'm Maciej O.</h1>
 
-            <div class="row home-content__main">
+          <p class="intro-position">
+            <span>Front-End Developer with React</span><br />
+            <span>JavaScript &amp; PHP Programmer</span>
+          </p>
 
-                <h3>Hello universe</h3>
-
-                <h1>
-                    I'm Maciej O.
-                </h1>
-
-                <p class="intro-position">
-                    <span>Front-End Developer,</span><br>
-                    <span>JavaScript &amp; PHP Programmer</span> 
-                </p>
-
-                <div class="home-content__scroll">
-                    <a href="#about" class="scroll-link smoothscroll">
-                        <span>more about me</span>
-                    </a>
-                </div>
-
-            </div>
-
-        </div> <!-- end home-content -->
-
-        <div class="home-arrowtip">
-            <a href="#" class="scroll-icon" onclick="$('.header-menu-toggle').trigger('click'); return false;">
-                <i class="im im-arrow-left" aria-hidden="true"></i>
-                <span>MENU</span>
+          <div class="home-content__scroll">
+            <a href="#about" class="scroll-link smoothscroll">
+              <span>more about me</span>
             </a>
+          </div>
         </div>
+      </div>
+      <!-- end home-content -->
 
-        <ul class="home-social">
-            <li>
-                <a href="mailto:maciejmao@gmail.com"><i class="im im-mail" aria-hidden="true"></i><span>E-mail</span></a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/maciejmao/" target="_blank"><i class="im im-linkedin" aria-hidden="true"></i><span>Linked In</span></a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/maoczek" target="_blank"><i class="im im-facebook" aria-hidden="true"></i><span>Facebook</span></a>
-            </li>
-            <li>
-                <a href="https://github.com/maciejmao" target="_blank"><i class="im im-github" aria-hidden="true"></i><span>GitHub</span></a>
-            </li>
-        </ul> 
-        <!-- end home-social -->
+      <div class="home-arrowtip">
+        <a
+          href="#"
+          class="scroll-icon"
+          onclick="$('.header-menu-toggle').trigger('click'); return false;"
+        >
+          <i class="im im-arrow-left" aria-hidden="true"></i>
+          <span>MENU</span>
+        </a>
+      </div>
 
-    </section> <!-- end s-home -->
-
+      <ul class="home-social">
+        <li>
+          <a href="mailto:maciejmao@gmail.com"
+            ><i class="im im-mail" aria-hidden="true"></i><span>E-mail</span></a
+          >
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/maciejmao/" target="_blank"
+            ><i class="im im-linkedin" aria-hidden="true"></i><span>Linked In</span></a
+          >
+        </li>
+        <li>
+          <a href="https://www.facebook.com/maoczek" target="_blank"
+            ><i class="im im-facebook" aria-hidden="true"></i><span>Facebook</span></a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/maciejmao" target="_blank"
+            ><i class="im im-github" aria-hidden="true"></i><span>GitHub</span></a
+          >
+        </li>
+      </ul>
+      <!-- end home-social -->
+    </section>
+    <!-- end s-home -->
 
     <!-- about
     ================================================== -->
     <section id="about" class="s-about target-section">
-        
-        <div class="row narrow section-intro has-bottom-sep">
-            <div class="row narrow">
-                <div class="col-full text-center">
-                    <h3>About Me</h3>
-                    <h1>Some personal stuff</h1>
-                </div>
-            </div>
+      <div class="row narrow section-intro has-bottom-sep">
+        <div class="row narrow">
+          <div class="col-full text-center">
+            <h3>About Me</h3>
+            <h1>Some personal stuff</h1>
+          </div>
         </div>
-        <div class="row section-intro intro-info">
-            <div class="col-two tab-full left text-center">
-                <img src="images/my/avt2.jpg" alt="MaO Avatar">
-            </div>
-            <div class="col-ten tab-full right">
-                <aside class="pull-quote lead">
-                    <blockquote>
-                        <p>Being a versatile developer means being pushed outside of your comfort zone to constantly learn new skills.</p>
-                    </blockquote>
-                </aside>
-            </div>
+      </div>
+      <div class="row section-intro intro-info">
+        <div class="col-two tab-full left text-center">
+          <img src="images/my/avt2.jpg" alt="MaO Avatar" />
+        </div>
+        <div class="col-ten tab-full right">
+          <aside class="pull-quote lead">
+            <blockquote>
+              <p>
+                Being a versatile developer means being pushed outside of your comfort zone to
+                constantly learn new skills.
+              </p>
+            </blockquote>
+          </aside>
+        </div>
+      </div>
+
+      <div class="row about-content">
+        <div class="col-six tab-full left">
+          <h3>Profession &amp; Interests</h3>
+
+          <p>
+            I have always been passionate about IT technologies, e.g. blockchain or artificial
+            intelligence. Currently, I am involved in programming websites and applications as
+            Front-End Web Developer. I have 10 years of experience in web development, contributing
+            to more than 40 business projects. I am trying to keep up with the evolution of the
+            industry, systematically improving my skills and implementing all modern solutions on
+            the market, such as the JavaScript frameworks: React, Angular, Vue, Ember.
+          </p>
+
+          <p>
+            I am kind of ambitious type with positive attitude to life and a lot of energy and
+            willingness to act or to inspire others. If I'm not coding or reading interesting book
+            or article at the moment, surely you can find me running, biking or roller-skating
+            somewhere around. I regularly start in various competitions. I'm a bit charitable. I
+            love travelling, alpine trekking, drinking yerba mate and I have a cat.
+          </p>
         </div>
 
-        <div class="row about-content">
+        <div class="col-six tab-full right s-skills">
+          <h3>Dev Skills</h3>
 
-            <div class="col-six tab-full left">
-                <h3>Profession &amp; Interests</h3>
-
-                <p>
-                I have always been passionate about IT technologies, e.g. blockchain or artificial intelligence.
-                Currently, I am involved in programming websites and applications as Front-End Web Developer.
-                I have 10 years of experience in web development, contributing to more than 40 business projects. 
-                I am trying to keep up with the evolution of the industry, systematically improving my skills and implementing all modern solutions on the market, such as the JavaScript frameworks: React, Angular, Vue, Ember.
-                </p>
-
-                <p>
-                I am kind of ambitious type with positive attitude to life and a lot of energy and willingness to act or to inspire others.
-                If I'm not coding or reading interesting book or article at the moment, surely you can find me running, biking or roller-skating somewhere around.
-                I regularly start in various competitions.
-                I'm a bit charitable. I love travelling, alpine trekking, drinking yerba mate and I have a cat.                    
-                </p>
-
-            </div>
-
-            <div class="col-six tab-full right s-skills">
-                <h3>Dev Skills</h3>
-
-                <ul class="skill-bars">
-                    <li>
-                    <div class="progress percent90"><span>90%</span></div>
-                    <strong>HTML5, CSS3</strong>
-                    </li>
-                    <li>
-                    <div class="progress percent85"><span>85%</span></div>
-                    <strong>Bootstrap, Bulma, SaSS</strong>
-                    </li>
-                    <li>
-                    <div class="progress percent70"><span>70%</span></div>
-                    <strong>JavaScript, ES6, JQuery</strong>
-                    </li>  
-                    <li>
-                    <div class="progress percent60"><span>60%</span></div>
-                    <strong>React, Redux</strong>
-                    </li>
-                    <li>
-                    <div class="progress percent40"><span>40%</span></div>
-                    <strong>Angular, Vue</strong>
-                    </li>   
-                    <li>
-                    <div class="progress percent70"><span>70%</span></div>
-                    <strong>PHP, mySQL</strong>
-                    </li>
-                    <li>
-                    <div class="progress percent65"><span>65%</span></div>
-                    <strong>Wordpress, Drupal, EE, PrestaShop</strong>
-                    </li> 
-                </ul>
-            </div>
-
-        </div> <!-- end about-content -->
-
-    </section> <!-- end about -->
+          <ul class="skill-bars">
+            <li>
+              <div class="progress percent90"><span>90%</span></div>
+              <strong>HTML5, CSS3</strong>
+            </li>
+            <li>
+              <div class="progress percent85"><span>85%</span></div>
+              <strong>SaSS, Bootstrap, Bulma</strong>
+            </li>
+            <li>
+              <div class="progress percent75"><span>75%</span></div>
+              <strong>JavaScript (ES6+), Typescript, JQuery</strong>
+            </li>
+            <li>
+              <div class="progress percent80"><span>80%</span></div>
+              <strong>React, Redux, Next</strong>
+            </li>
+            <li>
+              <div class="progress percent60"><span>60%</span></div>
+              <strong>Jest, RTL, Enzyme</strong>
+            </li>
+            <li>
+              <div class="progress percent80"><span>80%</span></div>
+              <strong>PHP, mySQL</strong>
+            </li>
+            <li>
+              <div class="progress percent75"><span>75%</span></div>
+              <strong>Wordpress, Drupal, PrestaShop, Shoper</strong>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- end about-content -->
+    </section>
+    <!-- end about -->
 
     <section id="experience" class="s-experience target-section">
-
-        <div class="row narrow section-intro has-bottom-sep">
-            <div class="row narrow">
-                <div class="col-full text-center">
-                    <h3>Work Experience</h3>
-                    <h1>My career details</h1>
-                </div>
-            </div>
+      <div class="row narrow section-intro has-bottom-sep">
+        <div class="row narrow">
+          <div class="col-full text-center">
+            <h3>Work Experience</h3>
+            <h1>My career details</h1>
+          </div>
         </div>
+      </div>
 
-    <!-- s-stats
+      <!-- s-stats
     ================================================== -->
-        <div class="row block-1-2 block-tab-1-2 block-mob-full stats text-center s-stats">
-
-            <div class="col-block stats__col stats1">
-                <div class="stats__upsign">
-                    <a href="#"><i class="im im-star" aria-hidden="true"></i></a>
-                </div>
-                <div class="stats__count" data-case="business">
-                    10
-                </div>
-                <h4>Years of business experience</h4>
-            </div>
-            <div class="col-block stats__col stats2">
-                <div class="stats__upsign">
-                    <a href="#"><i class="im im-task-o" aria-hidden="true"></i></a>
-                </div>
-                <div class="stats__count" data-case="projects">
-                    40
-                </div>
-                <h4>Projects finished succesfully</h4>
-            </div>
-
+      <div class="row block-1-2 block-tab-1-2 block-mob-full stats text-center s-stats">
+        <div class="col-block stats__col stats1">
+          <div class="stats__upsign">
+            <a href="#"><i class="im im-star" aria-hidden="true"></i></a>
+          </div>
+          <div class="stats__count" data-case="business">10</div>
+          <h4>Years of business experience</h4>
         </div>
+        <div class="col-block stats__col stats2">
+          <div class="stats__upsign">
+            <a href="#"><i class="im im-task-o" aria-hidden="true"></i></a>
+          </div>
+          <div class="stats__count" data-case="projects">40</div>
+          <h4>Projects finished succesfully</h4>
+        </div>
+      </div>
 
-        <div class="row about-content about-content--timeline">
+      <div class="row about-content about-content--timeline">
+        <div class="col-six tab-full left">
+          <div class="timeline">
+            <div class="timeline__block">
+              <div class="timeline__bullet"></div>
+              <div class="timeline__header">
+                <p class="timeline__timeframe">December 2022 - [now]</p>
+                <h3>React Developer, Redux, Typescript (ES6+), Next</h3>
+                <h5>Freelancer</h5>
+              </div>
+            </div>
+            <!-- end timeline__block -->
 
-            <div class="col-six tab-full left">
-                <div class="timeline">
+            <div class="timeline__block">
+              <div class="timeline__bullet"></div>
+              <div class="timeline__header">
+                <p class="timeline__timeframe">December 2019 - November 2022</p>
+                <h3>Front-End Developer; React &amp; Redux</h3>
+                <h5>IamIP Sverige AB</h5>
+              </div>
+            </div>
+            <!-- end timeline__block -->
 
-                    <div class="timeline__block">
-                        <div class="timeline__bullet"></div>
-                        <div class="timeline__header">
-                            <p class="timeline__timeframe">December 2019 - Present</p>
-                            <h3>Front-End Developer; React & Redux</h3>
-                            <h5>IAMIP Sverige AB</h5>
-                        </div>
-                    </div> <!-- end timeline__block -->
+            <div class="timeline__block">
+              <div class="timeline__bullet"></div>
+              <div class="timeline__header">
+                <p class="timeline__timeframe">July 2017 - November 2019</p>
+                <h3>Front-End Developer</h3>
+                <h5>Konceptlab</h5>
+              </div>
+            </div>
+            <!-- end timeline__block -->
 
-                    <div class="timeline__block">
-                        <div class="timeline__bullet"></div>
-                        <div class="timeline__header">
-                            <p class="timeline__timeframe">July 2018 - November 2019</p>
-                            <h3>Full-Stack Developer; JS &amp; PHP</h3>
-                            <h5>Freelancer, B2B</h5>
-                        </div>
-                    </div> <!-- end timeline__block -->
+            <div class="timeline__block">
+              <div class="timeline__bullet"></div>
+              <div class="timeline__header">
+                <p class="timeline__timeframe">January 2009 - June 2017</p>
+                <h3>Web Designer, Web Developer</h3>
+                <h5>Espresso</h5>
+              </div>
+            </div>
+            <!-- end timeline__block -->
 
-                    <div class="timeline__block">
-                        <div class="timeline__bullet"></div>
-                        <div class="timeline__header">
-                            <p class="timeline__timeframe">July 2017 - June 2018</p>
-                            <h3>Front-End Developer</h3>
-                            <h5>Konceptlab</h5>
-                        </div>
-                    </div> <!-- end timeline__block -->
+            <div class="timeline__block">
+              <div class="timeline__bullet"></div>
+              <div class="timeline__header">
+                <p class="timeline__timeframe">April 2008 - December 2008</p>
+                <h3>Junior Web Designer &amp; Developer</h3>
+                <h5>Szerf Szczecin</h5>
+              </div>
+            </div>
+            <!-- end timeline__block -->
+          </div>
+          <!-- end timeline -->
+        </div>
+        <!-- end left -->
 
-                    <div class="timeline__block">
-                        <div class="timeline__bullet"></div>
-                        <div class="timeline__header">
-                            <p class="timeline__timeframe">January 2009 - June 2017</p>
-                            <h3>Web Designer, Web Developer</h3>
-                            <h5>Espresso</h5>
-                        </div>
-                    </div> <!-- end timeline__block -->
-
-                    <div class="timeline__block">
-                        <div class="timeline__bullet"></div>
-                        <div class="timeline__header">
-                            <p class="timeline__timeframe">April 2008 - December 2008</p>
-                            <h3>Junior Web Designer &amp; Developer</h3>
-                            <h5>Szerf Szczecin, Freelancer</h5>
-                        </div>
-                    </div> <!-- end timeline__block -->
-
-                </div> <!-- end timeline -->
-            </div> <!-- end left -->
-
-            <div class="col-six tab-full right">
-                <div class="overview">
-                    <div class="overview__block">
-                        <div class="overview__header">
-                            <h5>Work &amp; projects examples overview:</h5>
-                        </div>
-                        <div class="overview__desc">
-                            <ul>
-                                <li>design, programming, maintaining, administration of websites and internet applications</li>
-                                <li>integration websites with cms, crm systems, payment gates, webservices, creating widgets in javascript, making animated banners, positioning websites (SEO)</li>
-                                <li>website design in accordance with W3C standards, WCAG, WAI-ARIA, RWD (responsive web design) and mobile first principles</li>
-                                <li>projects for large companies, e.g. Izba Gospodarcza Ciepłownictwo Polskie, Euroafrica Shipping Lines, Socatots Polska, ICFDS Global Limited, Berlin Döner Kebap</li>
-                                <li>design and implementation of web store based on the PrestaShop engine, extending functionalities e.g. managing options and live updates of products prices with online rates (xau,xag) from outsourcing stock</li>
-                                <li>webproject template based on wordpress for football academy purposes like online booking system, connected with data source from third-party crm</li>
-                                <li>preparing ExtendScript solutions for automatic importing translations from remote files to adobe indesign documents</li>
-                                <li>making gamification SPA module extension (angularJS) for users embedded in crm system</li>
-                                <li>maintaining, fixing, improving IamIP’s Intellectual Property platform to provide a secure, web-based portal for centrally managing all published patents worldwide – from the published individual patents to setting up search alerts, sharing, commenting, monitoring, collaborating and more</li>
-                            </ul>
-                        </div>
-                    </div> <!-- end overview__block -->
-
-                </div> <!-- end overview -->
-            </div> <!-- end right -->
-
-        </div> <!-- end about-content timeline -->
-
-    </section> <!-- end experience -->
+        <div class="col-six tab-full right">
+          <div class="overview">
+            <div class="overview__block">
+              <div class="overview__header">
+                <h5>Work &amp; projects examples overview:</h5>
+              </div>
+              <div class="overview__desc">
+                <ul>
+                  <li>
+                    design, programming, maintaining, administration of websites and internet
+                    applications
+                  </li>
+                  <li>
+                    integration websites with cms, crm systems, payment gates, webservices, creating
+                    widgets in javascript, making animated banners, positioning websites (SEO)
+                  </li>
+                  <li>
+                    website design in accordance with W3C standards, WCAG, WAI-ARIA, RWD (responsive
+                    web design) and mobile first principles
+                  </li>
+                  <li>
+                    projects for large companies, e.g. Izba Gospodarcza Ciepłownictwo Polskie,
+                    Euroafrica Shipping Lines, Socatots Polska, ICFDS Global Limited, Berlin Döner
+                    Kebap
+                  </li>
+                  <li>
+                    design and implementation of web store based on the PrestaShop engine, extending
+                    functionalities e.g. managing options and live updates of products prices with
+                    online rates (xau,xag) from outsourcing stock
+                  </li>
+                  <li>
+                    webproject template based on wordpress for football academy purposes like online
+                    booking system, connected with data source from third-party crm
+                  </li>
+                  <li>
+                    preparing ExtendScript solutions for automatic importing translations from
+                    remote files to adobe indesign documents
+                  </li>
+                  <li>
+                    making gamification SPA module extension (angularJS) for users embedded in crm
+                    system
+                  </li>
+                  <li>
+                    maintaining, fixing, improving IamIP’s Intellectual Property platform to provide
+                    a secure, web-based portal for centrally managing all published patents
+                    worldwide – from the published individual patents to setting up search alerts,
+                    sharing, commenting, monitoring, collaborating and more
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- end overview__block -->
+          </div>
+          <!-- end overview -->
+        </div>
+        <!-- end right -->
+      </div>
+      <!-- end about-content timeline -->
+    </section>
+    <!-- end experience -->
 
     <!-- works
     ================================================== -->
     <section id="works" class="s-works target-section">
-
-        <div class="row narrow section-intro has-bottom-sep">
-            <div class="col-full">
-                <h3>Portfolio</h3>
-                <h1>Check out my works</h1>
-            </div>
+      <div class="row narrow section-intro has-bottom-sep">
+        <div class="col-full">
+          <h3>Portfolio</h3>
+          <h1>Check out my works</h1>
         </div>
+      </div>
 
-        <div class="row masonry-wrap">
-            <div class="masonry">
-
-                <!-- 1. szerfszczecin.pl -->
-                <div class="masonry__brick">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="http://www.szerfszczecin.pl/" class="thumb-link" data-mfp-src="#modal-szerf" data-size="500x350" target="_blank">
-                                <img src="images/portfolio/szerfszczecin-pl.jpg" alt="">
-                                <span class="shadow-overlay"></span>
-                            </a>
-                        </div>
-                        <div class="item-folio__text">
-                            <h3 class="item-folio__title">
-                                Numismatic Store
-                            </h3>
-                            <p class="item-folio__cat">
-                                SzerfSzczecin
-                            </p>
-                        </div>
-                        <a href="http://www.szerfszczecin.pl/" class="item-folio__project-link" title="Project link" target="_blank">
-                            <i class="im im-link"></i>
-                        </a>
-                    </div> <!-- end item-folio -->
-                    <div id="modal-szerf" class="popup-modal slider mfp-hide">	
-                        <div class="media">
-                            <img src="images/portfolio/szerfszczecin-pl.jpg" alt="" />
-                        </div>      	
-                        <div class="description-box">
-                            <h4>
-                                Numismatic Store
-                            </h4>		      
-                            <p>
-                                Webstore project designed according to PrestaShop compatibility. Theme design based on standard shop layout with custom enhancements. Interaction improved with jQuery plugins. Functionality extended for managing and updating products with live rates from outsourcing stock.
-                            </p>
-
-                            <div class="categories">
-                                <i class="im im-tag"></i>
-                                PrestaShop, jQuery
-                            </div>			               
-                        </div>
-                        <div class="link-box">
-                            <a href="http://www.szerfszczecin.pl/" target="_blank">www...</a>
-                            <a href="#" class="popup-modal-dismiss">Close</a>
-                        </div>		      
-                    </div> <!-- /modal -->
-                </div> <!-- end masonry__brick -->
-
-                <!-- 2. maqsimum.pl -->
-                <div class="masonry__brick">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="https://maqsimum.pl/" class="thumb-link" data-mfp-src="#modal-maqsimum" data-size="500x350" target="_blank">
-                                <img src="images/portfolio/maqsimum-pl.jpg" alt="">
-                                <span class="shadow-overlay"></span>
-                            </a>
-                        </div>
-                        <div class="item-folio__text">
-                            <h3 class="item-folio__title">
-                                Authorized Service Provider
-                            </h3>
-                            <p class="item-folio__cat">
-                                Maqsimum
-                            </p>
-                        </div>
-                        <a href="https://maqsimum.pl/" class="item-folio__project-link" title="Project link" target="_blank">
-                            <i class="im im-link"></i>
-                        </a>
-                    </div> <!-- end item-folio -->
-                    <div id="modal-maqsimum" class="popup-modal slider mfp-hide">	
-                        <div class="media">
-                            <img src="images/portfolio/maqsimum-pl.jpg" alt="" />
-                        </div>      	
-                        <div class="description-box">
-                            <h4>
-                                Authorized Service Provider
-                            </h4>		      
-                            <p>
-                                Project was made firstly like a standalone prototype with Bootstrap and jQuery, then ported and adopted to Drupal environment. Design was adjusted to drupal plugins like panels and panopoly. Some advanced improvements was added like courses reservation system and RMA service with additional scripts on macOS server integrating project with Hansa software. 
-                            </p>
-
-                            <div class="categories">
-                                <i class="im im-tag"></i>
-                                Drupal, jQuery, Bootstrap
-                            </div>			               
-                        </div>
-                        <div class="link-box">
-                            <a href="https://maqsimum.pl/" target="_blank">www...</a>
-                            <a href="#" class="popup-modal-dismiss">Close</a>
-                        </div>		      
-                    </div> <!-- /modal -->                    
-                </div> <!-- end masonry__brick --> 
-
-                <!-- 3. socatots.co.uk -->
-                <div class="masonry__brick">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="https://socatots.co.uk/" class="thumb-link" data-mfp-src="#modal-socatots" data-size="500x350" target="_blank">
-                                <img src="images/portfolio/socatots-co-uk.jpg" alt="">
-                                <span class="shadow-overlay"></span>
-                            </a>
-                        </div>
-                        <div class="item-folio__text">
-                            <h3 class="item-folio__title">
-                                Football Academy for kids
-                            </h3>
-                            <p class="item-folio__cat">
-                                Socatots
-                            </p>
-                        </div>
-                        <a href="https://socatots.co.uk/" class="item-folio__project-link" title="Project link" target="_blank">
-                            <i class="im im-link"></i>
-                        </a>
-                    </div> <!-- end item-folio -->
-                    <div id="modal-socatots" class="popup-modal slider mfp-hide">	
-                        <div class="media">
-                            <img src="images/portfolio/socatots-co-uk.jpg" alt="" />
-                        </div>      	
-                        <div class="description-box">
-                            <h4>
-                                Football Academy for kids
-                            </h4>		      
-                            <p>
-                                Template project prepared for deploying in multiple variety of cases and languages. Made with specific development stack, strongly optimized for Wordpress environment with design approach using Timber, Page Builder and Twig. Mainly focused on reservation module solution integrated with data source from third-party CRM system.
-                            </p>
-
-                            <div class="categories">
-                                <i class="im im-tag"></i>
-                                wordpress, timber, twig, page builder, bulma, sass, commonjs, jQuery
-                            </div>			               
-                        </div>
-                        <div class="link-box">
-                            <a href="https://socatots.co.uk/" target="_blank">www...</a>
-                            <a href="#" class="popup-modal-dismiss">Close</a>
-                        </div>		      
-                    </div> <!-- /modal -->                    
-                </div> <!-- end masonry__brick -->                
-
-                <!-- 4. konceptlab.com -->
-                <div class="masonry__brick">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="https://konceptlab.com/" class="thumb-link" data-mfp-src="#modal-konceptlab" data-size="500x350" target="_blank">
-                                <img src="images/portfolio/konceptlab-com.jpg" alt="">
-                                <span class="shadow-overlay"></span>
-                            </a>
-                        </div>
-                        <div class="item-folio__text">
-                            <h3 class="item-folio__title">
-                                Marketing Agency
-                            </h3>
-                            <p class="item-folio__cat">
-                                Konceptlab
-                            </p>
-                        </div>
-                        <a href="https://konceptlab.com/" class="item-folio__project-link" title="Project link" target="_blank">
-                            <i class="im im-link"></i>
-                        </a>
-                    </div> <!-- end item-folio -->
-                    <div id="modal-konceptlab" class="popup-modal slider mfp-hide">	
-                        <div class="media">
-                            <img src="images/portfolio/konceptlab-com.jpg" alt="" />
-                        </div>      	
-                        <div class="description-box">
-                            <h4>
-                                Marketing Agency
-                            </h4>		      
-                            <p>
-                                Project design was at the beginning based on ready-to-go theme deeply compatible with wordpress and some wp plugins like visual composer. Due to optimization problem it was abandoned from that approach and completely redesigned to porting it to more versatile cms system like ExpressionEngine. Bootstrap and jQuery was used to build its layout, functionalities and interaction.
-                            </p>
-    
-                            <div class="categories">
-                                <i class="im im-tag"></i>
-                                ExpressionEngine, Vase theme, Bootstrap, jQuery
-                            </div>			               
-                        </div>
-                        <div class="link-box">
-                            <a href="https://konceptlab.com/" target="_blank">www...</a>
-                            <a href="#" class="popup-modal-dismiss">Close</a>
-                        </div>		      
-                    </div> <!-- /modal -->
-                </div> <!-- end masonry__brick -->
-
-                <!-- 5. cieplosystemowe.pl -->
-                <div class="masonry__brick">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="https://www.cieplosystemowe.pl/" class="thumb-link" data-mfp-src="#modal-cieplosystemowe" data-size="500x350" target="_blank">
-                                <img src="images/portfolio/cieplosystemowe-pl.jpg" alt="">
-                                <span class="shadow-overlay"></span>
-                            </a>
-                        </div>
-                        <div class="item-folio__text">
-                            <h3 class="item-folio__title">
-                                Heating System Idea
-                            </h3>
-                            <p class="item-folio__cat">
-                                Ciepło Systemowe
-                            </p>
-                        </div>
-                        <a href="https://www.cieplosystemowe.pl/" class="item-folio__project-link" title="Project link" target="_blank">
-                            <i class="im im-link"></i>
-                        </a>
-                    </div> <!-- end item-folio -->
-                    <div id="modal-cieplosystemowe" class="popup-modal slider mfp-hide">	
-                        <div class="media">
-                            <img src="images/portfolio/cieplosystemowe-pl.jpg" alt="" />
-                        </div>      	
-                        <div class="description-box">
-                            <h4>
-                                Heating System Idea
-                            </h4>		      
-                            <p>
-                                Simple project containing standalone theme made with custom responsive grid system for layout and jQuery goodies. Fully responsive concept with addition of neat plugins like interactive map or animated infographic. Project integrated smartly with ExpressionEngine for management of content, coexisting with two another projects combined all together in cms environment.
-                            </p>
-    
-                            <div class="categories">
-                                <i class="im im-tag"></i>
-                                ExpressionEngine, jQuery
-                            </div>			               
-                        </div>
-                        <div class="link-box">
-                            <a href="https://www.cieplosystemowe.pl/" target="_blank">www...</a>
-                            <a href="#" class="popup-modal-dismiss">Close</a>
-                        </div>		      
-                    </div> <!-- /modal -->
-                </div> <!-- end masonry__brick -->
-
-                <!-- 6. strefa.cieplosystemowe.pl -->
-                <div class="masonry__brick">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="http://io.cieplosystemowe.pl/" class="thumb-link" data-mfp-src="#modal-strefa" data-size="500x350" target="_blank">
-                                <img src="images/portfolio/strefa-cieplosystemowe-pl.jpg" alt="">
-                                <span class="shadow-overlay"></span>
-                            </a>
-                        </div>
-                        <div class="item-folio__text">
-                            <h3 class="item-folio__title">
-                                Gamification user zone
-                            </h3>
-                            <p class="item-folio__cat">
-                                Ciepło Systemowe
-                            </p>
-                        </div>
-                        <a href="http://io.cieplosystemowe.pl/" class="item-folio__project-link" title="Project link" target="_blank">
-                            <i class="im im-link"></i>
-                        </a>
-                    </div> <!-- end item-folio -->
-                    <div id="modal-strefa" class="popup-modal slider mfp-hide">	
-                        <div class="media">
-                            <img src="images/portfolio/strefa-cieplosystemowe-pl.jpg" alt="" />
-                        </div>      	
-                        <div class="description-box">
-                            <h4>
-                                Gamification user zone
-                            </h4>		      
-                            <p>
-                                Interactive dashboard-like app (SPA) made with AngularJS framework. It was built and properly adjusted using ready-to-go Ioadmin theme made of Angular Material and Bootstrap with several custom features. For implementing interactive charts, project used libraries like Morris.js and Chartjs. Development stack included Grunt configurations and tools like Sass, Karma for testing. Only demo version link served here due to privacy policy.
-                            </p>
-    
-                            <div class="categories">
-                                <i class="im im-tag"></i>
-                                AngularJS, Angular Material, Sass, Bootstrap
-                            </div>			               
-                        </div>
-                        <div class="link-box">
-                            <a href="http://io.cieplosystemowe.pl/" target="_blank">www...</a>
-                            <a href="#" class="popup-modal-dismiss">Close</a>
-                        </div>		      
-                    </div> <!-- /modal -->
-                </div> <!-- end masonry__brick -->
-
-                <!-- 7. alezdrowe.eu -->
-                <div class="masonry__brick">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="http://www.alezdrowe.eu/" class="thumb-link" data-mfp-src="#modal-alezdrowe" data-size="500x350" target="_blank">
-                                <img src="images/portfolio/alezdrowe-eu.jpg" alt="">
-                                <span class="shadow-overlay"></span>
-                            </a>
-                        </div>
-                        <div class="item-folio__text">
-                            <h3 class="item-folio__title">
-                                Healthy food blog
-                            </h3>
-                            <p class="item-folio__cat">
-                                Ale Zdrowe
-                            </p>
-                        </div>
-                        <a href="http://www.alezdrowe.eu/" class="item-folio__project-link" title="Project link" target="_blank">
-                            <i class="im im-link"></i>
-                        </a>
-                    </div> <!-- end item-folio -->
-                    <div id="modal-alezdrowe" class="popup-modal slider mfp-hide">	
-                        <div class="media">
-                            <img src="images/portfolio/alezdrowe-eu.jpg" alt="" />
-                        </div>      	
-                        <div class="description-box">
-                            <h4>
-                                Healthy food blog
-                            </h4>		      
-                            <p>
-                                Typical blog project integrated with blogging oriented CMS like ExpressionEngine. Design followed RWD principles based on custom responsive grid system for layout and jQuery. Some extra JS scripts and plugins added for improving interaction.
-                            </p>
-    
-                            <div class="categories">
-                                <i class="im im-tag"></i>
-                                ExpressionEngine, jQuery
-                            </div>			               
-                        </div>
-                        <div class="link-box">
-                            <a href="http://www.alezdrowe.eu/" target="_blank">www...</a>
-                            <a href="#" class="popup-modal-dismiss">Close</a>
-                        </div>		      
-                    </div> <!-- /modal -->
-                </div> <!-- end masonry__brick -->                
-
-                <!-- 8. shopandgo.pl -->
-                <div class="masonry__brick">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="http://shopandgo.pl" class="thumb-link" data-mfp-src="#modal-shopngo" data-size="500x350" target="_blank">
-                                <img src="images/portfolio/shopandgo-pl.jpg" alt="">
-                                <span class="shadow-overlay"></span>
-                            </a>
-                        </div>
-                        <div class="item-folio__text">
-                            <h3 class="item-folio__title">
-                                Shop’n’go Border Shop
-                            </h3>
-                            <p class="item-folio__cat">
-                                Euroafrica
-                            </p>
-                        </div>
-                        <a href="http://shopandgo.pl" class="item-folio__project-link" title="Project link" target="_blank">
-                            <i class="im im-link"></i>
-                        </a>
-                    </div> <!-- end item-folio -->
-                    <div id="modal-shopngo" class="popup-modal slider mfp-hide">	
-                        <div class="media">
-                            <img src="images/portfolio/shopandgo-pl.jpg" alt="" />
-                        </div>      	
-                        <div class="description-box">
-                            <h4>
-                                Shop’n’go Border Shop
-                            </h4>		      
-                            <p>
-                                Webstore project with standard functionalities. Design based on original standalone layout. Project paired with Shoper system for management of content. Interaction and usability improved with usage of MooTools framework. Some additional extensions of Shoper API was made to chain data with external Kasa software used for Warehouse Management.
-                            </p>
-    
-                            <div class="categories">
-                                <i class="im im-tag"></i>
-                                Shoper, MooTools
-                            </div>			               
-                        </div>
-                        <div class="link-box">
-                            <a href="http://shopandgo.pl" target="_blank">www...</a>
-                            <a href="#" class="popup-modal-dismiss">Close</a>
-                        </div>		      
-                    </div> <!-- /modal -->
-                </div> <!-- end masonry__brick --> 
-
-                <!-- 9. pol-glass.com -->
-                <div class="masonry__brick">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="http://pol-glass.com" class="thumb-link" data-mfp-src="#modal-polglass" data-size="500x350" target="_blank">
-                                <img src="images/portfolio/polglass-com.jpg" alt="">
-                                <span class="shadow-overlay"></span>
-                            </a>
-                        </div>
-                        <div class="item-folio__text">
-                            <h3 class="item-folio__title">
-                                Manufacturer of water parks
-                            </h3>
-                            <p class="item-folio__cat">
-                                Polglass
-                            </p>
-                        </div>
-                        <a href="http://pol-glass.com" class="item-folio__project-link" title="Project link" target="_blank">
-                            <i class="im im-link"></i>
-                        </a>
-                    </div> <!-- end item-folio -->
-                    <div id="modal-polglass" class="popup-modal slider mfp-hide">	
-                        <div class="media">
-                            <img src="images/portfolio/polglass-com.jpg" alt="" />
-                        </div>      	
-                        <div class="description-box">
-                            <h4>
-                                Manufacturer of water parks
-                            </h4>		      
-                            <p>
-                                Webproject consisting of standalone theme made with custom responsive grid system for layout and jQuery extensions. Fully responsive concept followed RWD techniques. Project integrated with ExpressionEngine including multilanguage support.
-                            </p>
-    
-                            <div class="categories">
-                                <i class="im im-tag"></i>
-                                ExpressionEngine, jQuery
-                            </div>			               
-                        </div>
-                        <div class="link-box">
-                            <a href="http://pol-glass.com" target="_blank">www...</a>
-                            <a href="#" class="popup-modal-dismiss">Close</a>
-                        </div>		      
-                    </div> <!-- /modal -->
-                </div> <!-- end masonry__brick --> 
-
-                <!-- 10. celsium.pl -->
-                <div class="masonry__brick">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="http://www.celsium.pl/" class="thumb-link" data-mfp-src="#modal-celsium" data-size="500x350" target="_blank">
-                                <img src="images/portfolio/celsium-pl.jpg" alt="">
-                                <span class="shadow-overlay"></span>
-                            </a>
-                        </div>
-                        <div class="item-folio__text">
-                            <h3 class="item-folio__title">
-                                Supplier of heating system
-                            </h3>
-                            <p class="item-folio__cat">
-                                Celsium
-                            </p>
-                        </div>
-                        <a href="http://www.celsium.pl/" class="item-folio__project-link" title="Project link" target="_blank">
-                            <i class="im im-link"></i>
-                        </a>
-                    </div> <!-- end item-folio -->
-                    <div id="modal-celsium" class="popup-modal slider mfp-hide">	
-                        <div class="media">
-                            <img src="images/portfolio/celsium-pl.jpg" alt="" />
-                        </div>      	
-                        <div class="description-box">
-                            <h4>
-                                Supplier of heating system
-                            </h4>		      
-                            <p>
-                                Project made according to responsive principles (RWD) using custom responsive grid system for layout and jQuery framework for interaction. ExpressionEngine was choosed for content management. Functionality was extended with integration of data source retrieved from Airly API.
-                            </p>
-    
-                            <div class="categories">
-                                <i class="im im-tag"></i>
-                                ExpressionEngine, jQuery, Airly API
-                            </div>			               
-                        </div>
-                        <div class="link-box">
-                            <a href="http://www.celsium.pl/" target="_blank">www...</a>
-                            <a href="#" class="popup-modal-dismiss">Close</a>
-                        </div>		      
-                    </div> <!-- /modal -->
-                </div> <!-- end masonry__brick --> 
-
-                <!-- 11. berlindonerkebap.com -->
-                <div class="masonry__brick">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="https://www.berlindonerkebap.com" class="thumb-link" data-mfp-src="#modal-bdk" data-size="500x350" target="_blank">
-                                <img src="images/portfolio/berlindonerkebap-com.jpg" alt="">
-                                <span class="shadow-overlay"></span>
-                            </a>
-                        </div>
-                        <div class="item-folio__text">
-                            <h3 class="item-folio__title">
-                                Fast food restaurant chain
-                            </h3>
-                            <p class="item-folio__cat">                     
-                                Berlin Döner Kebap
-                            </p>
-                        </div>
-                        <a href="https://www.berlindonerkebap.com" class="item-folio__project-link" title="Project link" target="_blank">
-                            <i class="im im-link"></i>
-                        </a>
-                    </div> <!-- end item-folio -->
-                    <div id="modal-bdk" class="popup-modal slider mfp-hide">	
-                        <div class="media">
-                            <img src="images/portfolio/berlindonerkebap-com.jpg" alt="" />
-                        </div>      	
-                        <div class="description-box">
-                            <h4>
-                                Fast food restaurant chain
-                            </h4>		      
-                            <p>
-                                Project containing standalone theme made with custom responsive grid system for layout and jQuery framework. Fully responsive concept with addition of neat addons like responsive multi-level menu or interactive map. Project integrated with ExpressionEngine CMS.
-                            </p>
-    
-                            <div class="categories">
-                                <i class="im im-tag"></i>
-                                ExpressionEngine, jQuery
-                            </div>			               
-                        </div>
-                        <div class="link-box">
-                            <a href="https://www.berlindonerkebap.com" target="_blank">www...</a>
-                            <a href="#" class="popup-modal-dismiss">Close</a>
-                        </div>		      
-                    </div> <!-- /modal -->
-                </div> <!-- end masonry__brick --> 
-
-                <!-- 12. uk.icfds.com -->
-                <div class="masonry__brick">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="https://uk.icfds.com/" class="thumb-link" data-mfp-src="#modal-icfds" data-size="500x350" target="_blank">
-                                <img src="images/portfolio/icfds-com.jpg" alt="">
-                                <span class="shadow-overlay"></span>
-                            </a>
-                        </div>
-                        <div class="item-folio__text">
-                            <h3 class="item-folio__title">
-                                Football Confederation
-                            </h3>
-                            <p class="item-folio__cat">                     
-                                UKCFDS
-                            </p>
-                        </div>
-                        <a href="https://uk.icfds.com/" class="item-folio__project-link" title="Project link" target="_blank">
-                            <i class="im im-link"></i>
-                        </a>
-                    </div> <!-- end item-folio -->
-                    <div id="modal-icfds" class="popup-modal slider mfp-hide">	
-                        <div class="media">
-                            <img src="images/portfolio/icfds-com.jpg" alt="" />
-                        </div>      	
-                        <div class="description-box">
-                            <h4>
-                                Football Confederation
-                            </h4>		      
-                            <p>
-                                Project was made like a standalone prototype with custom responsive grid system for layout and jQuery framework. It was designed following single-page concept with some additional functionality like fullsized video intro. Finally project was properly adjusted and ported to Wordpress environment.
-                            </p>
-    
-                            <div class="categories">
-                                <i class="im im-tag"></i>
-                                Wordpress, jQuery
-                            </div>			               
-                        </div>
-                        <div class="link-box">
-                            <a href="https://uk.icfds.com/" target="_blank">www...</a>
-                            <a href="#" class="popup-modal-dismiss">Close</a>
-                        </div>		      
-                    </div> <!-- /modal -->
-                </div> <!-- end masonry__brick --> 
-
-                <!-- 13. polfund.com.pl -->
-                <div class="masonry__brick">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="http://polfund.com.pl/" class="thumb-link" data-mfp-src="#modal-polfund" data-size="500x350" target="_blank">
-                                <img src="images/portfolio/polfund-com-pl.jpg" alt="">
-                                <span class="shadow-overlay"></span>
-                            </a>
-                        </div>
-                        <div class="item-folio__text">
-                            <h3 class="item-folio__title">
-                                Loan Guarantee Fund
-                            </h3>
-                            <p class="item-folio__cat">                     
-                                Polfund
-                            </p>
-                        </div>
-                        <a href="http://polfund.com.pl/" class="item-folio__project-link" title="Project link" target="_blank">
-                            <i class="im im-link"></i>
-                        </a>
-                    </div> <!-- end item-folio -->
-                    <div id="modal-polfund" class="popup-modal slider mfp-hide">	
-                        <div class="media">
-                            <img src="images/portfolio/polfund-com-pl.jpg" alt="" />
-                        </div>      	
-                        <div class="description-box">
-                            <h4>
-                                Loan Guarantee Fund
-                            </h4>		      
-                            <p>
-                                Design followed RWD principles based on custom responsive grid system for layout and jQuery. Some extra JS scripts and plugins added for improving interaction. Project integrated with CMS ExpressionEngine.
-                            </p>
-    
-                            <div class="categories">
-                                <i class="im im-tag"></i>
-                                ExpressionEngine, jQuery
-                            </div>			               
-                        </div>
-                        <div class="link-box">
-                            <a href="http://polfund.com.pl/" target="_blank">www...</a>
-                            <a href="#" class="popup-modal-dismiss">Close</a>
-                        </div>		      
-                    </div> <!-- /modal -->
-                </div> <!-- end masonry__brick --> 
-
-                <!-- 14. wnbp.pl -->
-                <div class="masonry__brick">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="http://wnbp.pl" class="thumb-link" data-mfp-src="#modal-wnbp" data-size="500x350" target="_blank">
-                                <img src="images/portfolio/wnbp-pl.jpg" alt="">
-                                <span class="shadow-overlay"></span>
-                            </a>
-                        </div>
-                        <div class="item-folio__text">
-                            <h3 class="item-folio__title">
-                                Law Office
-                            </h3>
-                            <p class="item-folio__cat">                     
-                                Wybranowski &amp; Nowicki
-                            </p>
-                        </div>
-                        <a href="http://wnbp.pl" class="item-folio__project-link" title="Project link" target="_blank">
-                            <i class="im im-link"></i>
-                        </a>
-                    </div> <!-- end item-folio -->
-                    <div id="modal-wnbp" class="popup-modal slider mfp-hide">	
-                        <div class="media">
-                            <img src="images/portfolio/wnbp-pl.jpg" alt="" />
-                        </div>      	
-                        <div class="description-box">
-                            <h4>
-                                Law Office
-                            </h4>		      
-                            <p>
-                                Webproject created with custom responsive grid system for layout and jQuery extensions. Fully responsive concept followed RWD techniques. Project integrated with ExpressionEngine including multilanguage support.
-                            </p>
-    
-                            <div class="categories">
-                                <i class="im im-tag"></i>
-                                ExpressionEngine, jQuery
-                            </div>			               
-                        </div>
-                        <div class="link-box">
-                            <a href="http://wnbp.pl" target="_blank">www...</a>
-                            <a href="#" class="popup-modal-dismiss">Close</a>
-                        </div>		      
-                    </div> <!-- /modal -->
-                </div> <!-- end masonry__brick --> 
-
-                <!-- 15. multiassist.pl -->
-                <div class="masonry__brick">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="https://multiassist.pl/" class="thumb-link" data-mfp-src="#modal-multiassist" data-size="500x350" target="_blank">
-                                <img src="images/portfolio/multiassist-pl.jpg" alt="">
-                                <span class="shadow-overlay"></span>
-                            </a>
-                        </div>
-                        <div class="item-folio__text">
-                            <h3 class="item-folio__title">
-                                Vehicle registration services
-                            </h3>
-                            <p class="item-folio__cat">                     
-                                Multi Assist
-                            </p>
-                        </div>
-                        <a href="https://multiassist.pl/" class="item-folio__project-link" title="Project link" target="_blank">
-                            <i class="im im-link"></i>
-                        </a>
-                    </div> <!-- end item-folio -->
-                    <div id="modal-multiassist" class="popup-modal slider mfp-hide">	
-                        <div class="media">
-                            <img src="images/portfolio/multiassist-pl.jpg" alt="" />
-                        </div>      	
-                        <div class="description-box">
-                            <h4>
-                                Vehicle registration services
-                            </h4>		      
-                            <p>
-                                Project was redesigned on ready-to-go Denver theme including Bootstrap and jQuery frameworks. ExpressionEngine was integrated for content management. Content resources was extended with some data retrieved from clientside API.
-
-                            </p>
-    
-                            <div class="categories">
-                                <i class="im im-tag"></i>
-                                ExpressionEngine, Denver Theme,  Bootstrap, jQuery
-                            </div>			               
-                        </div>
-                        <div class="link-box">
-                            <a href="https://multiassist.pl/" target="_blank">www...</a>
-                            <a href="#" class="popup-modal-dismiss">Close</a>
-                        </div>		      
-                    </div> <!-- /modal -->
-                </div> <!-- end masonry__brick -->
-
-                <!-- 16. medentesplus.pl -->
-                <div class="masonry__brick">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="http://medentesplus.pl" class="thumb-link" data-mfp-src="#modal-medentes" data-size="500x350" target="_blank">
-                                <img src="images/portfolio/medentesplus-pl.jpg" alt="">
-                                <span class="shadow-overlay"></span>
-                            </a>
-                        </div>
-                        <div class="item-folio__text">
-                            <h3 class="item-folio__title">
-                                Dental clinic
-                            </h3>
-                            <p class="item-folio__cat">                     
-                                Medentes
-                            </p>
-                        </div>
-                        <a href="http://medentesplus.pl" class="item-folio__project-link" title="Project link" target="_blank">
-                            <i class="im im-link"></i>
-                        </a>
-                    </div> <!-- end item-folio -->
-                    <div id="modal-medentes" class="popup-modal slider mfp-hide">	
-                        <div class="media">
-                            <img src="images/portfolio/medentesplus-pl.jpg" alt="" />
-                        </div>      	
-                        <div class="description-box">
-                            <h4>
-                                Dental clinic
-                            </h4>		      
-                            <p>
-                                Project based on standalone theme made with custom responsive grid system for layout and jQuery framework. Fully responsive design paired with ExpressionEngine CMS.
-                            </p>
-    
-                            <div class="categories">
-                                <i class="im im-tag"></i>
-                                ExpressionEngine, jQuery
-                            </div>			               
-                        </div>
-                        <div class="link-box">
-                            <a href="http://medentesplus.pl" target="_blank">www...</a>
-                            <a href="#" class="popup-modal-dismiss">Close</a>
-                        </div>		      
-                    </div> <!-- /modal -->
-                </div> <!-- end masonry__brick -->
-
+      <div class="row masonry-wrap">
+        <div class="masonry">
+          <!-- 1. szerfszczecin.pl -->
+          <div class="masonry__brick">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a
+                  href="http://www.szerfszczecin.pl/"
+                  class="thumb-link"
+                  data-mfp-src="#modal-szerf"
+                  data-size="500x350"
+                  target="_blank"
+                >
+                  <img src="images/portfolio/szerfszczecin-pl.jpg" alt="" />
+                  <span class="shadow-overlay"></span>
+                </a>
+              </div>
+              <div class="item-folio__text">
+                <h3 class="item-folio__title">Numismatic Store</h3>
+                <p class="item-folio__cat">SzerfSzczecin</p>
+              </div>
+              <a
+                href="http://www.szerfszczecin.pl/"
+                class="item-folio__project-link"
+                title="Project link"
+                target="_blank"
+              >
+                <i class="im im-link"></i>
+              </a>
             </div>
-        </div> <!-- end masonry -->
+            <!-- end item-folio -->
+            <div id="modal-szerf" class="popup-modal slider mfp-hide">
+              <div class="media">
+                <img src="images/portfolio/szerfszczecin-pl.jpg" alt="" />
+              </div>
+              <div class="description-box">
+                <h4>Numismatic Store</h4>
+                <p>
+                  Webstore project designed according to PrestaShop compatibility. Theme design
+                  based on standard shop layout with custom enhancements. Interaction improved with
+                  jQuery plugins. Functionality extended for managing and updating products with
+                  live rates from outsourcing stock.
+                </p>
 
-    </section> <!-- end works -->
+                <div class="categories">
+                  <i class="im im-tag"></i>
+                  PrestaShop, jQuery
+                </div>
+              </div>
+              <div class="link-box">
+                <a href="http://www.szerfszczecin.pl/" target="_blank">www...</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+            <!-- /modal -->
+          </div>
+          <!-- end masonry__brick -->
 
+          <!-- 2. maqsimum.pl -->
+          <div class="masonry__brick">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a
+                  href="https://maqsimum.pl/"
+                  class="thumb-link"
+                  data-mfp-src="#modal-maqsimum"
+                  data-size="500x350"
+                  target="_blank"
+                >
+                  <img src="images/portfolio/maqsimum-pl.jpg" alt="" />
+                  <span class="shadow-overlay"></span>
+                </a>
+              </div>
+              <div class="item-folio__text">
+                <h3 class="item-folio__title">Authorized Service Provider</h3>
+                <p class="item-folio__cat">Maqsimum</p>
+              </div>
+              <a
+                href="https://maqsimum.pl/"
+                class="item-folio__project-link"
+                title="Project link"
+                target="_blank"
+              >
+                <i class="im im-link"></i>
+              </a>
+            </div>
+            <!-- end item-folio -->
+            <div id="modal-maqsimum" class="popup-modal slider mfp-hide">
+              <div class="media">
+                <img src="images/portfolio/maqsimum-pl.jpg" alt="" />
+              </div>
+              <div class="description-box">
+                <h4>Authorized Service Provider</h4>
+                <p>
+                  Project was made firstly like a standalone prototype with Bootstrap and jQuery,
+                  then ported and adopted to Drupal environment. Design was adjusted to drupal
+                  plugins like panels and panopoly. Some advanced improvements was added like
+                  courses reservation system and RMA service with additional scripts on macOS server
+                  integrating project with Hansa software.
+                </p>
+
+                <div class="categories">
+                  <i class="im im-tag"></i>
+                  Drupal, jQuery, Bootstrap
+                </div>
+              </div>
+              <div class="link-box">
+                <a href="https://maqsimum.pl/" target="_blank">www...</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+            <!-- /modal -->
+          </div>
+          <!-- end masonry__brick -->
+
+          <!-- 3. socatots.co.uk -->
+          <div class="masonry__brick">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a
+                  href="https://socatots.co.uk/"
+                  class="thumb-link"
+                  data-mfp-src="#modal-socatots"
+                  data-size="500x350"
+                  target="_blank"
+                >
+                  <img src="images/portfolio/socatots-co-uk.jpg" alt="" />
+                  <span class="shadow-overlay"></span>
+                </a>
+              </div>
+              <div class="item-folio__text">
+                <h3 class="item-folio__title">Football Academy for kids</h3>
+                <p class="item-folio__cat">Socatots</p>
+              </div>
+              <a
+                href="https://socatots.co.uk/"
+                class="item-folio__project-link"
+                title="Project link"
+                target="_blank"
+              >
+                <i class="im im-link"></i>
+              </a>
+            </div>
+            <!-- end item-folio -->
+            <div id="modal-socatots" class="popup-modal slider mfp-hide">
+              <div class="media">
+                <img src="images/portfolio/socatots-co-uk.jpg" alt="" />
+              </div>
+              <div class="description-box">
+                <h4>Football Academy for kids</h4>
+                <p>
+                  Template project prepared for deploying in multiple variety of cases and
+                  languages. Made with specific development stack, strongly optimized for Wordpress
+                  environment with design approach using Timber, Page Builder and Twig. Mainly
+                  focused on reservation module solution integrated with data source from
+                  third-party CRM system.
+                </p>
+
+                <div class="categories">
+                  <i class="im im-tag"></i>
+                  wordpress, timber, twig, page builder, bulma, sass, commonjs, jQuery
+                </div>
+              </div>
+              <div class="link-box">
+                <a href="https://socatots.co.uk/" target="_blank">www...</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+            <!-- /modal -->
+          </div>
+          <!-- end masonry__brick -->
+
+          <!-- 4. konceptlab.com -->
+          <div class="masonry__brick">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a
+                  href="https://konceptlab.com/"
+                  class="thumb-link"
+                  data-mfp-src="#modal-konceptlab"
+                  data-size="500x350"
+                  target="_blank"
+                >
+                  <img src="images/portfolio/konceptlab-com.jpg" alt="" />
+                  <span class="shadow-overlay"></span>
+                </a>
+              </div>
+              <div class="item-folio__text">
+                <h3 class="item-folio__title">Marketing Agency</h3>
+                <p class="item-folio__cat">Konceptlab</p>
+              </div>
+              <a
+                href="https://konceptlab.com/"
+                class="item-folio__project-link"
+                title="Project link"
+                target="_blank"
+              >
+                <i class="im im-link"></i>
+              </a>
+            </div>
+            <!-- end item-folio -->
+            <div id="modal-konceptlab" class="popup-modal slider mfp-hide">
+              <div class="media">
+                <img src="images/portfolio/konceptlab-com.jpg" alt="" />
+              </div>
+              <div class="description-box">
+                <h4>Marketing Agency</h4>
+                <p>
+                  Project design was at the beginning based on ready-to-go theme deeply compatible
+                  with wordpress and some wp plugins like visual composer. Due to optimization
+                  problem it was abandoned from that approach and completely redesigned to porting
+                  it to more versatile cms system like ExpressionEngine. Bootstrap and jQuery was
+                  used to build its layout, functionalities and interaction.
+                </p>
+
+                <div class="categories">
+                  <i class="im im-tag"></i>
+                  ExpressionEngine, Vase theme, Bootstrap, jQuery
+                </div>
+              </div>
+              <div class="link-box">
+                <a href="https://konceptlab.com/" target="_blank">www...</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+            <!-- /modal -->
+          </div>
+          <!-- end masonry__brick -->
+
+          <!-- 5. cieplosystemowe.pl -->
+          <div class="masonry__brick">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a
+                  href="https://www.cieplosystemowe.pl/"
+                  class="thumb-link"
+                  data-mfp-src="#modal-cieplosystemowe"
+                  data-size="500x350"
+                  target="_blank"
+                >
+                  <img src="images/portfolio/cieplosystemowe-pl.jpg" alt="" />
+                  <span class="shadow-overlay"></span>
+                </a>
+              </div>
+              <div class="item-folio__text">
+                <h3 class="item-folio__title">Heating System Idea</h3>
+                <p class="item-folio__cat">Ciepło Systemowe</p>
+              </div>
+              <a
+                href="https://www.cieplosystemowe.pl/"
+                class="item-folio__project-link"
+                title="Project link"
+                target="_blank"
+              >
+                <i class="im im-link"></i>
+              </a>
+            </div>
+            <!-- end item-folio -->
+            <div id="modal-cieplosystemowe" class="popup-modal slider mfp-hide">
+              <div class="media">
+                <img src="images/portfolio/cieplosystemowe-pl.jpg" alt="" />
+              </div>
+              <div class="description-box">
+                <h4>Heating System Idea</h4>
+                <p>
+                  Simple project containing standalone theme made with custom responsive grid system
+                  for layout and jQuery goodies. Fully responsive concept with addition of neat
+                  plugins like interactive map or animated infographic. Project integrated smartly
+                  with ExpressionEngine for management of content, coexisting with two another
+                  projects combined all together in cms environment.
+                </p>
+
+                <div class="categories">
+                  <i class="im im-tag"></i>
+                  ExpressionEngine, jQuery
+                </div>
+              </div>
+              <div class="link-box">
+                <a href="https://www.cieplosystemowe.pl/" target="_blank">www...</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+            <!-- /modal -->
+          </div>
+          <!-- end masonry__brick -->
+
+          <!-- 6. strefa.cieplosystemowe.pl -->
+          <div class="masonry__brick">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a
+                  href="http://io.cieplosystemowe.pl/"
+                  class="thumb-link"
+                  data-mfp-src="#modal-strefa"
+                  data-size="500x350"
+                  target="_blank"
+                >
+                  <img src="images/portfolio/strefa-cieplosystemowe-pl.jpg" alt="" />
+                  <span class="shadow-overlay"></span>
+                </a>
+              </div>
+              <div class="item-folio__text">
+                <h3 class="item-folio__title">Gamification user zone</h3>
+                <p class="item-folio__cat">Ciepło Systemowe</p>
+              </div>
+              <a
+                href="http://io.cieplosystemowe.pl/"
+                class="item-folio__project-link"
+                title="Project link"
+                target="_blank"
+              >
+                <i class="im im-link"></i>
+              </a>
+            </div>
+            <!-- end item-folio -->
+            <div id="modal-strefa" class="popup-modal slider mfp-hide">
+              <div class="media">
+                <img src="images/portfolio/strefa-cieplosystemowe-pl.jpg" alt="" />
+              </div>
+              <div class="description-box">
+                <h4>Gamification user zone</h4>
+                <p>
+                  Interactive dashboard-like app (SPA) made with AngularJS framework. It was built
+                  and properly adjusted using ready-to-go Ioadmin theme made of Angular Material and
+                  Bootstrap with several custom features. For implementing interactive charts,
+                  project used libraries like Morris.js and Chartjs. Development stack included
+                  Grunt configurations and tools like Sass, Karma for testing. Only demo version
+                  link served here due to privacy policy.
+                </p>
+
+                <div class="categories">
+                  <i class="im im-tag"></i>
+                  AngularJS, Angular Material, Sass, Bootstrap
+                </div>
+              </div>
+              <div class="link-box">
+                <a href="http://io.cieplosystemowe.pl/" target="_blank">www...</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+            <!-- /modal -->
+          </div>
+          <!-- end masonry__brick -->
+
+          <!-- 7. alezdrowe.eu -->
+          <div class="masonry__brick">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a
+                  href="http://www.alezdrowe.eu/"
+                  class="thumb-link"
+                  data-mfp-src="#modal-alezdrowe"
+                  data-size="500x350"
+                  target="_blank"
+                >
+                  <img src="images/portfolio/alezdrowe-eu.jpg" alt="" />
+                  <span class="shadow-overlay"></span>
+                </a>
+              </div>
+              <div class="item-folio__text">
+                <h3 class="item-folio__title">Healthy food blog</h3>
+                <p class="item-folio__cat">Ale Zdrowe</p>
+              </div>
+              <a
+                href="http://www.alezdrowe.eu/"
+                class="item-folio__project-link"
+                title="Project link"
+                target="_blank"
+              >
+                <i class="im im-link"></i>
+              </a>
+            </div>
+            <!-- end item-folio -->
+            <div id="modal-alezdrowe" class="popup-modal slider mfp-hide">
+              <div class="media">
+                <img src="images/portfolio/alezdrowe-eu.jpg" alt="" />
+              </div>
+              <div class="description-box">
+                <h4>Healthy food blog</h4>
+                <p>
+                  Typical blog project integrated with blogging oriented CMS like ExpressionEngine.
+                  Design followed RWD principles based on custom responsive grid system for layout
+                  and jQuery. Some extra JS scripts and plugins added for improving interaction.
+                </p>
+
+                <div class="categories">
+                  <i class="im im-tag"></i>
+                  ExpressionEngine, jQuery
+                </div>
+              </div>
+              <div class="link-box">
+                <a href="http://www.alezdrowe.eu/" target="_blank">www...</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+            <!-- /modal -->
+          </div>
+          <!-- end masonry__brick -->
+
+          <!-- 8. shopandgo.pl -->
+          <div class="masonry__brick">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a
+                  href="http://shopandgo.pl"
+                  class="thumb-link"
+                  data-mfp-src="#modal-shopngo"
+                  data-size="500x350"
+                  target="_blank"
+                >
+                  <img src="images/portfolio/shopandgo-pl.jpg" alt="" />
+                  <span class="shadow-overlay"></span>
+                </a>
+              </div>
+              <div class="item-folio__text">
+                <h3 class="item-folio__title">Shop’n’go Border Shop</h3>
+                <p class="item-folio__cat">Euroafrica</p>
+              </div>
+              <a
+                href="http://shopandgo.pl"
+                class="item-folio__project-link"
+                title="Project link"
+                target="_blank"
+              >
+                <i class="im im-link"></i>
+              </a>
+            </div>
+            <!-- end item-folio -->
+            <div id="modal-shopngo" class="popup-modal slider mfp-hide">
+              <div class="media">
+                <img src="images/portfolio/shopandgo-pl.jpg" alt="" />
+              </div>
+              <div class="description-box">
+                <h4>Shop’n’go Border Shop</h4>
+                <p>
+                  Webstore project with standard functionalities. Design based on original
+                  standalone layout. Project paired with Shoper system for management of content.
+                  Interaction and usability improved with usage of MooTools framework. Some
+                  additional extensions of Shoper API was made to chain data with external Kasa
+                  software used for Warehouse Management.
+                </p>
+
+                <div class="categories">
+                  <i class="im im-tag"></i>
+                  Shoper, MooTools
+                </div>
+              </div>
+              <div class="link-box">
+                <a href="http://shopandgo.pl" target="_blank">www...</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+            <!-- /modal -->
+          </div>
+          <!-- end masonry__brick -->
+
+          <!-- 9. pol-glass.com -->
+          <div class="masonry__brick">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a
+                  href="http://pol-glass.com"
+                  class="thumb-link"
+                  data-mfp-src="#modal-polglass"
+                  data-size="500x350"
+                  target="_blank"
+                >
+                  <img src="images/portfolio/polglass-com.jpg" alt="" />
+                  <span class="shadow-overlay"></span>
+                </a>
+              </div>
+              <div class="item-folio__text">
+                <h3 class="item-folio__title">Manufacturer of water parks</h3>
+                <p class="item-folio__cat">Polglass</p>
+              </div>
+              <a
+                href="http://pol-glass.com"
+                class="item-folio__project-link"
+                title="Project link"
+                target="_blank"
+              >
+                <i class="im im-link"></i>
+              </a>
+            </div>
+            <!-- end item-folio -->
+            <div id="modal-polglass" class="popup-modal slider mfp-hide">
+              <div class="media">
+                <img src="images/portfolio/polglass-com.jpg" alt="" />
+              </div>
+              <div class="description-box">
+                <h4>Manufacturer of water parks</h4>
+                <p>
+                  Webproject consisting of standalone theme made with custom responsive grid system
+                  for layout and jQuery extensions. Fully responsive concept followed RWD
+                  techniques. Project integrated with ExpressionEngine including multilanguage
+                  support.
+                </p>
+
+                <div class="categories">
+                  <i class="im im-tag"></i>
+                  ExpressionEngine, jQuery
+                </div>
+              </div>
+              <div class="link-box">
+                <a href="http://pol-glass.com" target="_blank">www...</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+            <!-- /modal -->
+          </div>
+          <!-- end masonry__brick -->
+
+          <!-- 10. celsium.pl -->
+          <div class="masonry__brick">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a
+                  href="http://www.celsium.pl/"
+                  class="thumb-link"
+                  data-mfp-src="#modal-celsium"
+                  data-size="500x350"
+                  target="_blank"
+                >
+                  <img src="images/portfolio/celsium-pl.jpg" alt="" />
+                  <span class="shadow-overlay"></span>
+                </a>
+              </div>
+              <div class="item-folio__text">
+                <h3 class="item-folio__title">Supplier of heating system</h3>
+                <p class="item-folio__cat">Celsium</p>
+              </div>
+              <a
+                href="http://www.celsium.pl/"
+                class="item-folio__project-link"
+                title="Project link"
+                target="_blank"
+              >
+                <i class="im im-link"></i>
+              </a>
+            </div>
+            <!-- end item-folio -->
+            <div id="modal-celsium" class="popup-modal slider mfp-hide">
+              <div class="media">
+                <img src="images/portfolio/celsium-pl.jpg" alt="" />
+              </div>
+              <div class="description-box">
+                <h4>Supplier of heating system</h4>
+                <p>
+                  Project made according to responsive principles (RWD) using custom responsive grid
+                  system for layout and jQuery framework for interaction. ExpressionEngine was
+                  choosed for content management. Functionality was extended with integration of
+                  data source retrieved from Airly API.
+                </p>
+
+                <div class="categories">
+                  <i class="im im-tag"></i>
+                  ExpressionEngine, jQuery, Airly API
+                </div>
+              </div>
+              <div class="link-box">
+                <a href="http://www.celsium.pl/" target="_blank">www...</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+            <!-- /modal -->
+          </div>
+          <!-- end masonry__brick -->
+
+          <!-- 11. berlindonerkebap.com -->
+          <div class="masonry__brick">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a
+                  href="https://www.berlindonerkebap.com"
+                  class="thumb-link"
+                  data-mfp-src="#modal-bdk"
+                  data-size="500x350"
+                  target="_blank"
+                >
+                  <img src="images/portfolio/berlindonerkebap-com.jpg" alt="" />
+                  <span class="shadow-overlay"></span>
+                </a>
+              </div>
+              <div class="item-folio__text">
+                <h3 class="item-folio__title">Fast food restaurant chain</h3>
+                <p class="item-folio__cat">Berlin Döner Kebap</p>
+              </div>
+              <a
+                href="https://www.berlindonerkebap.com"
+                class="item-folio__project-link"
+                title="Project link"
+                target="_blank"
+              >
+                <i class="im im-link"></i>
+              </a>
+            </div>
+            <!-- end item-folio -->
+            <div id="modal-bdk" class="popup-modal slider mfp-hide">
+              <div class="media">
+                <img src="images/portfolio/berlindonerkebap-com.jpg" alt="" />
+              </div>
+              <div class="description-box">
+                <h4>Fast food restaurant chain</h4>
+                <p>
+                  Project containing standalone theme made with custom responsive grid system for
+                  layout and jQuery framework. Fully responsive concept with addition of neat addons
+                  like responsive multi-level menu or interactive map. Project integrated with
+                  ExpressionEngine CMS.
+                </p>
+
+                <div class="categories">
+                  <i class="im im-tag"></i>
+                  ExpressionEngine, jQuery
+                </div>
+              </div>
+              <div class="link-box">
+                <a href="https://www.berlindonerkebap.com" target="_blank">www...</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+            <!-- /modal -->
+          </div>
+          <!-- end masonry__brick -->
+
+          <!-- 12. uk.icfds.com -->
+          <div class="masonry__brick">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a
+                  href="https://uk.icfds.com/"
+                  class="thumb-link"
+                  data-mfp-src="#modal-icfds"
+                  data-size="500x350"
+                  target="_blank"
+                >
+                  <img src="images/portfolio/icfds-com.jpg" alt="" />
+                  <span class="shadow-overlay"></span>
+                </a>
+              </div>
+              <div class="item-folio__text">
+                <h3 class="item-folio__title">Football Confederation</h3>
+                <p class="item-folio__cat">UKCFDS</p>
+              </div>
+              <a
+                href="https://uk.icfds.com/"
+                class="item-folio__project-link"
+                title="Project link"
+                target="_blank"
+              >
+                <i class="im im-link"></i>
+              </a>
+            </div>
+            <!-- end item-folio -->
+            <div id="modal-icfds" class="popup-modal slider mfp-hide">
+              <div class="media">
+                <img src="images/portfolio/icfds-com.jpg" alt="" />
+              </div>
+              <div class="description-box">
+                <h4>Football Confederation</h4>
+                <p>
+                  Project was made like a standalone prototype with custom responsive grid system
+                  for layout and jQuery framework. It was designed following single-page concept
+                  with some additional functionality like fullsized video intro. Finally project was
+                  properly adjusted and ported to Wordpress environment.
+                </p>
+
+                <div class="categories">
+                  <i class="im im-tag"></i>
+                  Wordpress, jQuery
+                </div>
+              </div>
+              <div class="link-box">
+                <a href="https://uk.icfds.com/" target="_blank">www...</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+            <!-- /modal -->
+          </div>
+          <!-- end masonry__brick -->
+
+          <!-- 13. polfund.com.pl -->
+          <div class="masonry__brick">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a
+                  href="http://polfund.com.pl/"
+                  class="thumb-link"
+                  data-mfp-src="#modal-polfund"
+                  data-size="500x350"
+                  target="_blank"
+                >
+                  <img src="images/portfolio/polfund-com-pl.jpg" alt="" />
+                  <span class="shadow-overlay"></span>
+                </a>
+              </div>
+              <div class="item-folio__text">
+                <h3 class="item-folio__title">Loan Guarantee Fund</h3>
+                <p class="item-folio__cat">Polfund</p>
+              </div>
+              <a
+                href="http://polfund.com.pl/"
+                class="item-folio__project-link"
+                title="Project link"
+                target="_blank"
+              >
+                <i class="im im-link"></i>
+              </a>
+            </div>
+            <!-- end item-folio -->
+            <div id="modal-polfund" class="popup-modal slider mfp-hide">
+              <div class="media">
+                <img src="images/portfolio/polfund-com-pl.jpg" alt="" />
+              </div>
+              <div class="description-box">
+                <h4>Loan Guarantee Fund</h4>
+                <p>
+                  Design followed RWD principles based on custom responsive grid system for layout
+                  and jQuery. Some extra JS scripts and plugins added for improving interaction.
+                  Project integrated with CMS ExpressionEngine.
+                </p>
+
+                <div class="categories">
+                  <i class="im im-tag"></i>
+                  ExpressionEngine, jQuery
+                </div>
+              </div>
+              <div class="link-box">
+                <a href="http://polfund.com.pl/" target="_blank">www...</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+            <!-- /modal -->
+          </div>
+          <!-- end masonry__brick -->
+
+          <!-- 14. wnbp.pl -->
+          <div class="masonry__brick">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a
+                  href="http://wnbp.pl"
+                  class="thumb-link"
+                  data-mfp-src="#modal-wnbp"
+                  data-size="500x350"
+                  target="_blank"
+                >
+                  <img src="images/portfolio/wnbp-pl.jpg" alt="" />
+                  <span class="shadow-overlay"></span>
+                </a>
+              </div>
+              <div class="item-folio__text">
+                <h3 class="item-folio__title">Law Office</h3>
+                <p class="item-folio__cat">Wybranowski &amp; Nowicki</p>
+              </div>
+              <a
+                href="http://wnbp.pl"
+                class="item-folio__project-link"
+                title="Project link"
+                target="_blank"
+              >
+                <i class="im im-link"></i>
+              </a>
+            </div>
+            <!-- end item-folio -->
+            <div id="modal-wnbp" class="popup-modal slider mfp-hide">
+              <div class="media">
+                <img src="images/portfolio/wnbp-pl.jpg" alt="" />
+              </div>
+              <div class="description-box">
+                <h4>Law Office</h4>
+                <p>
+                  Webproject created with custom responsive grid system for layout and jQuery
+                  extensions. Fully responsive concept followed RWD techniques. Project integrated
+                  with ExpressionEngine including multilanguage support.
+                </p>
+
+                <div class="categories">
+                  <i class="im im-tag"></i>
+                  ExpressionEngine, jQuery
+                </div>
+              </div>
+              <div class="link-box">
+                <a href="http://wnbp.pl" target="_blank">www...</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+            <!-- /modal -->
+          </div>
+          <!-- end masonry__brick -->
+
+          <!-- 15. multiassist.pl -->
+          <div class="masonry__brick">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a
+                  href="https://multiassist.pl/"
+                  class="thumb-link"
+                  data-mfp-src="#modal-multiassist"
+                  data-size="500x350"
+                  target="_blank"
+                >
+                  <img src="images/portfolio/multiassist-pl.jpg" alt="" />
+                  <span class="shadow-overlay"></span>
+                </a>
+              </div>
+              <div class="item-folio__text">
+                <h3 class="item-folio__title">Vehicle registration services</h3>
+                <p class="item-folio__cat">Multi Assist</p>
+              </div>
+              <a
+                href="https://multiassist.pl/"
+                class="item-folio__project-link"
+                title="Project link"
+                target="_blank"
+              >
+                <i class="im im-link"></i>
+              </a>
+            </div>
+            <!-- end item-folio -->
+            <div id="modal-multiassist" class="popup-modal slider mfp-hide">
+              <div class="media">
+                <img src="images/portfolio/multiassist-pl.jpg" alt="" />
+              </div>
+              <div class="description-box">
+                <h4>Vehicle registration services</h4>
+                <p>
+                  Project was redesigned on ready-to-go Denver theme including Bootstrap and jQuery
+                  frameworks. ExpressionEngine was integrated for content management. Content
+                  resources was extended with some data retrieved from clientside API.
+                </p>
+
+                <div class="categories">
+                  <i class="im im-tag"></i>
+                  ExpressionEngine, Denver Theme, Bootstrap, jQuery
+                </div>
+              </div>
+              <div class="link-box">
+                <a href="https://multiassist.pl/" target="_blank">www...</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+            <!-- /modal -->
+          </div>
+          <!-- end masonry__brick -->
+
+          <!-- 16. medentesplus.pl -->
+          <div class="masonry__brick">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a
+                  href="http://medentesplus.pl"
+                  class="thumb-link"
+                  data-mfp-src="#modal-medentes"
+                  data-size="500x350"
+                  target="_blank"
+                >
+                  <img src="images/portfolio/medentesplus-pl.jpg" alt="" />
+                  <span class="shadow-overlay"></span>
+                </a>
+              </div>
+              <div class="item-folio__text">
+                <h3 class="item-folio__title">Dental clinic</h3>
+                <p class="item-folio__cat">Medentes</p>
+              </div>
+              <a
+                href="http://medentesplus.pl"
+                class="item-folio__project-link"
+                title="Project link"
+                target="_blank"
+              >
+                <i class="im im-link"></i>
+              </a>
+            </div>
+            <!-- end item-folio -->
+            <div id="modal-medentes" class="popup-modal slider mfp-hide">
+              <div class="media">
+                <img src="images/portfolio/medentesplus-pl.jpg" alt="" />
+              </div>
+              <div class="description-box">
+                <h4>Dental clinic</h4>
+                <p>
+                  Project based on standalone theme made with custom responsive grid system for
+                  layout and jQuery framework. Fully responsive design paired with ExpressionEngine
+                  CMS.
+                </p>
+
+                <div class="categories">
+                  <i class="im im-tag"></i>
+                  ExpressionEngine, jQuery
+                </div>
+              </div>
+              <div class="link-box">
+                <a href="http://medentesplus.pl" target="_blank">www...</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+            <!-- /modal -->
+          </div>
+          <!-- end masonry__brick -->
+        </div>
+      </div>
+      <!-- end masonry -->
+    </section>
+    <!-- end works -->
 
     <!-- s-contact
     ================================================== -->
-    <section id="contact" class="s-contact target-section" data-parallax="scroll" data-image-src="images/my/150.jpg" data-natural-width=1920 data-natural-height=1282 data-position-y=center>
+    <section
+      id="contact"
+      class="s-contact target-section"
+      data-parallax="scroll"
+      data-image-src="images/my/150.jpg"
+      data-natural-width="1920"
+      data-natural-height="1282"
+      data-position-y="center"
+    >
+      <div class="overlay"></div>
 
-        <div class="overlay"></div>
-
-        <div class="row narrow section-intro has-bottom-sep">
-            <div class="col-full">
-                <h3>Contact</h3>
-                <h1>Get in touch</h1>
-            </div>
+      <div class="row narrow section-intro has-bottom-sep">
+        <div class="col-full">
+          <h3>Contact</h3>
+          <h1>Get in touch</h1>
         </div>
+      </div>
 
-        <div class="row section-intro">
-            <div class="col-full">
-                <p class="lead">Feel free to contact me by <a href="mailto:maciejmao@gmail.com">email</a> or any of the resources listed below:</p>
-                <ul class="footer-social">
-                    <li>
-                        <a href="mailto:maciejmao@gmail.com">
-                            <i class="im im-mail" aria-hidden="true"></i>
-                            <span>E-mail</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/maciejmao/" target="_blank">
-                            <i class="im im-linkedin" aria-hidden="true"></i>
-                            <span>LinkedIn</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/maoczek" target="_blank">
-                            <i class="im im-facebook" aria-hidden="true"></i>
-                            <span>Facebook</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+      <div class="row section-intro">
+        <div class="col-full">
+          <p class="lead">
+            Feel free to contact me by <a href="mailto:maciejmao@gmail.com">email</a> or any of the
+            resources listed below:
+          </p>
+          <ul class="footer-social">
+            <li>
+              <a href="mailto:maciejmao@gmail.com">
+                <i class="im im-mail" aria-hidden="true"></i>
+                <span>E-mail</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/maciejmao/" target="_blank">
+                <i class="im im-linkedin" aria-hidden="true"></i>
+                <span>LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/maoczek" target="_blank">
+                <i class="im im-facebook" aria-hidden="true"></i>
+                <span>Facebook</span>
+              </a>
+            </li>
+          </ul>
         </div>
-
-    </section> <!-- end s-contact -->
-
+      </div>
+    </section>
+    <!-- end s-contact -->
 
     <!-- footer
     ================================================== -->
     <footer>
+      <div class="row footer-bottom">
+        <div class="col-twelve">
+          <div class="copyright">
+            <span>© Copyright 2023</span>
+            <span>Design by <a href="mailto:maciejmao@gmail.com">MaO</a></span>
+            <span
+              >Credits to <a href="https://www.styleshout.com/" target="_blank">Styleshout</a></span
+            >
+          </div>
+        </div>
 
-        <div class="row footer-bottom">
-
-            <div class="col-twelve">
-                <div class="copyright">
-                    <span>© Copyright 2019</span>
-                    <span>Design by <a href="mailto:maciejmao@gmail.com">MaO</a></span> 
-                    <span>Credits to <a href="https://www.styleshout.com/" target="_blank">Styleshout</a></span>	
-                </div>
-            </div>
-
-            <div class="go-top"><a class="smoothscroll" title="Back to Top" href="#top"><i class="im im-arrow-up" aria-hidden="true"></i></a></div>
-
-        </div> <!-- end footer-bottom -->
-
-    </footer> <!-- end footer -->
+        <div class="go-top">
+          <a class="smoothscroll" title="Back to Top" href="#top"
+            ><i class="im im-arrow-up" aria-hidden="true"></i
+          ></a>
+        </div>
+      </div>
+      <!-- end footer-bottom -->
+    </footer>
+    <!-- end footer -->
 
     <div id="preloader">
-        <div id="loader"></div>
+      <div id="loader"></div>
     </div>
-
 
     <!-- Java Script
     ================================================== -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
-</body>
-
+  </body>
 </html>
