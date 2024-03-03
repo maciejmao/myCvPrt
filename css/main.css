@@ -3304,6 +3304,10 @@ footer a:focus {
   text-align: center;
 }
 
+.footer-bottom .copyright {
+  padding-bottom: 2rem;
+}
+
 .footer-bottom .copyright span {
   display: inline-block;
 }
